@@ -1,6 +1,11 @@
 # tap2fluent
 Throw DNS Message into Elasticsearch via Fluentd.
 
+## install tap2fluent
+```
+go get -u github.com/mimuret/tap2fluent/tap2fluent
+```
+
 ## install elasticsearch template
 ```
 curl -H "content-type: application/json" -XPOST http://localhost:9200/_template/dnstap -d "@misc/template.json"
@@ -50,6 +55,6 @@ dnstap:
 
 ## run tap2fluent
 ```
-sudo -u unbound tap2fluent -u /var/run/unbound/dnstap.sock -h your.fluentd.host.example
+sudo -u unbound tap2fluent -u /var/run/unbound/dnstap.sock -h your.fluentd.host.IP
 ```
 
