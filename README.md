@@ -1,3 +1,7 @@
+tap2fleunt is experimental implementation.
+if you use production, see [dtap](https://github.com/mimuret/dtap)
+
+
 # tap2fluent
 Throw DNS Message into Elasticsearch via Fluentd.
 
